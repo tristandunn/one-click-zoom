@@ -1,0 +1,18 @@
+{
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://zoom.us/j/*"
+      ]
+    }
+  ],
+  "manifest_version": 2,
+  "name": "one-click-zoom",
+  "permissions": ["background", "tabs"],
+  "version": "0.1"
+}
