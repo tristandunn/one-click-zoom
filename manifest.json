@@ -7,7 +7,10 @@
     {
       "js": ["content.js"],
       "matches": [
-        "https://zoom.us/j/*"
+        "https://zoom.us/j/*",
+        "https://zoom.us/s/*",
+        "https://*.zoom.us/j/*",
+        "https://*.zoom.us/s/*"
       ]
     }
   ],
