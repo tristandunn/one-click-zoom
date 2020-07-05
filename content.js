@@ -1,7 +1,5 @@
-window.addEventListener("load", function() {
-  if (window.location.search != "?status=success") {
-    return;
+setInterval(function() {
+  if (window.location.hash === "#success") {
+    chrome.runtime.sendMessage({});
   }
-
-  chrome.runtime.sendMessage({});
-});
+}, 250);
